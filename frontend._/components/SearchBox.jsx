@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 
 export default function SearchBox() {
@@ -54,7 +55,7 @@ let buttonAction = async (action, slug, initialQuantity) => {
           className="px-4 py-2 w-full border border-gray-300 rounded focus:outline-none focus:ring focus:border-blue-300"
         />
       </div>
-      <div className="dropContainer w-5/6 rounded bg-blue-200">
+      <div className="dropContainer w-full rounded bg-blue-200">
         {dropdown.map((product) => {
           return (
             <div className="flex justify-between p-3 my-3" key={product._id}>
